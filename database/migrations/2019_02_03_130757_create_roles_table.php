@@ -18,10 +18,10 @@ class CreateRolesTable extends Migration
             $table->string('title');
             $table->timestamps();
         });
-        Schema::create('roles_users', function (Blueprint $table) {
-//            $table->integer("role_id");
+        Schema::create('role_user', function (Blueprint $table) {
+            $table->integer("role_id");
 //            $table->foreign("role_id")->references("id")->on("roles");
-//            $table->integer("user_id");
+            $table->integer("user_id");
 //            $table->foreign("user_id")->references("id")->on("users");
             $table->timestamps();
         });
@@ -34,6 +34,7 @@ class CreateRolesTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('roles');
         Schema::dropIfExists('roles');
     }
 }

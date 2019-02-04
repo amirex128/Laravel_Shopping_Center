@@ -25,7 +25,7 @@ class CreateColorsTable extends Migration
 //            $table->integer("color_id");
             $table->timestamps();
 //            $table->foreign("color_id")->references("id")->on("colors");
-//            $table->integer("product_id");
+            $table->integer("product_id");
 //            $table->foreign("product_id")->references("id")->on("products");
         });
     }

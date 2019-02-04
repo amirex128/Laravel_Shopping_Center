@@ -15,13 +15,13 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
-//            $table->integer("user_id");
+            $table->integer("user_id");
 //            $table->foreign("user_id")->references("id")->on("users");
-//            $table->integer("brand_id");
+            $table->integer("brand_id");
 //            $table->foreign("brand_id")->references("id")->on("brands");
-//            $table->integer("gallery_id");
+            $table->integer("gallery_id");
 //            $table->foreign("gallery_id")->references("id")->on("galleries");
-//            $table->integer("property_id");
+            $table->integer("property_id");
 //            $table->foreign("property_id")->references("id")->on("properties");
             $table->string("title");
             $table->text("body");
