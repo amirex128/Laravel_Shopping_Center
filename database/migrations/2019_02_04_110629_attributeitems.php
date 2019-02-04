@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBookmarksTable extends Migration
+class Attributeitems extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,9 @@ class CreateBookmarksTable extends Migration
      */
     public function up()
     {
-        Schema::create('bookmarks', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer("user_id")->unsigned();
+        Schema::table('attributeitems', function (Blueprint $table) {
+            $table->foreign("attribute_id")->references("id")->on("attributes")->onDelete('cascade');
 
-            $table->string('url');
-            $table->integer('id_product');
-            $table->timestamps();
         });
     }
 
@@ -30,6 +26,8 @@ class CreateBookmarksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bookmarks');
+        Schema::table('attributeitems', function (Blueprint $table) {
+            //
+        });
     }
 }

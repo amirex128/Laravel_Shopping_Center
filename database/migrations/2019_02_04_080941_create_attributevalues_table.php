@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateArticlesTable extends Migration
+class CreateAttributevaluesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,10 @@ class CreateArticlesTable extends Migration
      */
     public function up()
     {
-        Schema::create('articles', function (Blueprint $table) {
+        Schema::create('attributevalues', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer("user_id")->unsigned();
-
             $table->string("title");
-            $table->string("description");
-            $table->text("body");
-            $table->string("thumbnail");
-            $table->string("slug");
-            $table->integer("commentCount")->default(0);
+            $table->integer("attributeitem_id")->unsigned();
             $table->timestamps();
         });
     }
@@ -34,6 +28,6 @@ class CreateArticlesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('articles');
+        Schema::dropIfExists('attributevalues');
     }
 }

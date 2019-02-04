@@ -493,8 +493,6 @@ class ComposerStaticInit8972aa286a81b7427591969166cb1c79
     );
 
     public static $classMap = array (
-        'App\\Article' => __DIR__ . '/../..' . '/app/Article.php',
-        'App\\Category' => __DIR__ . '/../..' . '/app/Category.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Admin\\ArticleController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/ArticleController.php',
@@ -523,7 +521,6 @@ class ComposerStaticInit8972aa286a81b7427591969166cb1c79
         'App\\Http\\Requests\\admin\\CourseRequest' => __DIR__ . '/../..' . '/app/Http/Requests/admin/CourseRequest.php',
         'App\\Http\\Requests\\admin\\EpisodeRequest' => __DIR__ . '/../..' . '/app/Http/Requests/admin/EpisodeRequest.php',
         'App\\Http\\Requests\\admin\\UserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/admin/UserRequest.php',
-        'App\\Product' => __DIR__ . '/../..' . '/app/Product.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',

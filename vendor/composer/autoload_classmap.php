@@ -6,8 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\Article' => $baseDir . '/app/Article.php',
-    'App\\Category' => $baseDir . '/app/Category.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Admin\\ArticleController' => $baseDir . '/app/Http/Controllers/admin/ArticleController.php',
@@ -36,7 +34,6 @@ return array(
     'App\\Http\\Requests\\admin\\CourseRequest' => $baseDir . '/app/Http/Requests/admin/CourseRequest.php',
     'App\\Http\\Requests\\admin\\EpisodeRequest' => $baseDir . '/app/Http/Requests/admin/EpisodeRequest.php',
     'App\\Http\\Requests\\admin\\UserRequest' => $baseDir . '/app/Http/Requests/admin/UserRequest.php',
-    'App\\Product' => $baseDir . '/app/Product.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
