@@ -1,0 +1,98 @@
+[
+    {
+      "id": 1,
+      "title": "All Day Event",
+      "description": "This is a cool event",
+      "className": ["white"],
+      "status": "success",
+      "participant": [1,2,4,7,9]
+    },
+    {
+      "id": 2,
+      "title": "Dot Event",
+      "description": "Phasellus at ultricies neque, quis malesuada augue. Donec eleifend  nisl eu consectetur.",
+      "className": [""],
+      "status": "primary",
+      "participant": [4,5,7,8]
+    },
+    {
+      "id": 3,
+      "title": "Info Event",
+      "description": "Quis malesuada augue. Donec eleifend  nisl eu consectetur. ",
+      "className": [""],
+      "status": "info",
+      "participant": [6,7]
+    },
+    {
+      "id": 4,
+      "title": "Success Event",
+      "description": "Donec eleifend  nisl eu consectetur. ",
+      "className": [""],
+      "status": "success",
+      "participant": [3,6]
+    },
+    {
+      "id": 5,
+      "title": "Warn Event",
+      "description": "Malesuada augue. Donec eleifend  nisl eu consectetur. ",
+      "className": [""],
+      "status": "pink",
+      "participant": [2,6,8,9]
+    },
+    {
+      "id": 6,
+      "title": "Repeating Event",
+      "description": "Malesuada augue. Donec eleifend  nisl eu consectetur. ",
+      "className": ["white"],
+      "participant": [6,9]
+    },
+    {
+      "id": 7,
+      "title": "Conference",
+      "description": "Donec eleifend  nisl eu consectetur",
+      "className": ["success text-white"],
+      "participant": [3,9]
+    },
+    {
+      "id": 8,
+      "title": "Meeting",
+      "description": "Duis malesuada augue. Donec eleifend  nisl eu consectetur. ",
+      "className": ["white"],
+      "participant": [3,4,5,7]
+    },
+    {
+      "id": 9,
+      "title": "Task",
+      "description": "New task",
+      "className": ["white"],
+      "participant": [1,2,8,9]
+    },
+    {
+      "id": 10,
+      "title": "Meeting",
+      "description": "Augue. Donec eleifend  nisl eu consectetur. ",
+      "className": ["white"],
+      "participant": [2,9]
+    },
+    {
+      "id": 11,
+      "title": "Kick-off meeting",
+      "description": "This is a kick-off meeting",
+      "className": ["white"],
+      "participant": [6,9]
+    },
+    {
+      "id": 12,
+      "title": "New project",
+      "description": "Tricies neque, quis malesuada augue. Donec eleifend  nisl eu consectetur. ",
+      "className": ["white"],
+      "participant": [1,4]
+    },
+    {
+      "id": 13,
+      "title": "Birthday Party",
+      "description": "Happy birthday to Sam, Welcome and join us",
+      "className": ["white"],
+      "participant": [1,2,3,4,5,6]
+    }
+ ]
