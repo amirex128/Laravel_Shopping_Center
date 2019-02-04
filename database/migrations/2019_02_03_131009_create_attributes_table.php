@@ -15,8 +15,8 @@ class CreateAttributesTable extends Migration
     {
         Schema::create('attributes', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer("categoryGroup_id");
-            $table->foreign("categoryGroup_id")->references("id")->on("categoryGroups");
+//            $table->integer("categoryGroup_id");
+//            $table->foreign("categoryGroup_id")->references("id")->on("categoryGroups");
             $table->string('title');
             $table->string('description');
             $table->timestamps();

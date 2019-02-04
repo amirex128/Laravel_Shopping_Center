@@ -21,17 +21,17 @@ class CreateCategoriesTable extends Migration
             $table->timestamps();
         });
         Schema::create('categories_products', function (Blueprint $table) {
-            $table->integer("category_id");
-            $table->foreign("category_id")->references("id")->on("categories");
-            $table->integer("product_id");
-            $table->foreign("product_id")->references("id")->on("products");
+//            $table->integer("category_id");
+//            $table->foreign("category_id")->references("id")->on("categories");
+//            $table->integer("product_id");
+//            $table->foreign("product_id")->references("id")->on("products");
             $table->timestamps();
         });
         Schema::create('articles_categories', function (Blueprint $table) {
-            $table->integer("article_id");
-            $table->foreign("article_id")->references("id")->on("articles");
-            $table->integer("category_id");
-            $table->foreign("category_id")->references("id")->on("categories");
+//            $table->integer("article_id");
+//            $table->foreign("article_id")->references("id")->on("articles");
+//            $table->integer("category_id");
+//            $table->foreign("category_id")->references("id")->on("categories");
             $table->timestamps();
         });
     }

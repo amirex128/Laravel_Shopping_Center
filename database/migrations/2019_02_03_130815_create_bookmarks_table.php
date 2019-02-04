@@ -17,8 +17,8 @@ class CreateBookmarksTable extends Migration
             $table->increments('id');
             $table->string('url');
             $table->integer('id_product');
-            $table->integer("user_id");
-            $table->foreign("user_id")->references("id")->on("users");
+//            $table->integer("user_id");
+//            $table->foreign("user_id")->references("id")->on("users");
             $table->timestamps();
         });
     }

@@ -20,7 +20,7 @@ class CreateColorsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::create('colors_product', function (Blueprint $table) {
+        Schema::create('color_product', function (Blueprint $table) {
             $table->increments("id");
 //            $table->integer("color_id");
             $table->timestamps();
@@ -38,5 +38,6 @@ class CreateColorsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('colors');
+        Schema::dropIfExists('color_product');
     }
 }

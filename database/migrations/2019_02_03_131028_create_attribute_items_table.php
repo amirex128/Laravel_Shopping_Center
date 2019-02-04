@@ -15,8 +15,8 @@ class CreateAttributeItemsTable extends Migration
     {
         Schema::create('attribute_items', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer("attribute_id");
-            $table->foreign("attribute_id")->references("id")->on("attributes");
+//            $table->integer("attribute_id");
+//            $table->foreign("attribute_id")->references("id")->on("attributes");
             $table->string('title');
             $table->string('label');
             $table->timestamps();
