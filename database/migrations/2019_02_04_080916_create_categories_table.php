@@ -21,16 +21,16 @@ class CreateCategoriesTable extends Migration
             $table->timestamps();
         });
         Schema::create('category_product', function (Blueprint $table) {
-            $table->integer("category_id");
+            $table->integer("category_id")->unsigned();
 //            $table->foreign("category_id")->references("id")->on("categories");
-            $table->integer("product_id");
+            $table->integer("product_id")->unsigned();
 //            $table->foreign("product_id")->references("id")->on("products");
             $table->timestamps();
         });
         Schema::create('article_category', function (Blueprint $table) {
-            $table->integer("article_id");
+            $table->integer("article_id")->unsigned();
 //            $table->foreign("article_id")->references("id")->on("articles");
-            $table->integer("category_id");
+            $table->integer("category_id")->unsigned();
 //            $table->foreign("category_id")->references("id")->on("categories");
             $table->timestamps();
         });
