@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePropertiesTable extends Migration
+class Warranty extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreatePropertiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('properties', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('product_id')->unsigned();
-            $table->text('advantages');
-            $table->text('disadvantages');
-            $table->timestamps();
+        Schema::table('warranties', function (Blueprint $table) {
+            $table->foreign("product_id")->references("id")->on("products")->onDelete('cascade');
+
         });
     }
 
@@ -29,6 +26,8 @@ class CreatePropertiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('properties');
+        Schema::table('warranty', function (Blueprint $table) {
+            //
+        });
     }
 }
