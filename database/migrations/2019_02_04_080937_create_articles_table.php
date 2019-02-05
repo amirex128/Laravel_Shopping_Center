@@ -18,9 +18,9 @@ class CreateArticlesTable extends Migration
             $table->integer("user_id")->unsigned();
             $table->string("title");
             $table->string("description");
+            $table->text("slug");
             $table->text("body");
             $table->string("thumbnail");
-            $table->string("slug");
             $table->integer("commentCount")->default(0);
             $table->timestamps();
         });

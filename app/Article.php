@@ -9,11 +9,10 @@ class Article extends Model
 {
     use Sluggable;
 
-    /**
-     * Return the sluggable configuration array for this model.
-     *
-     * @return array
-     */
+     public function path()
+    {
+        return "/article/{$this->slug}";
+}
     public function sluggable()
     {
         return [
@@ -23,6 +22,14 @@ class Article extends Model
         ];
     }
 
+    public function getRouteKeyName()
+    {
+        return "slug";
+    }
+    public function comments()
+    {
+        return $this->morphMany('App\Comment', 'commentable');
+    }
 
     public function user()
     {

@@ -15,9 +15,8 @@ class Comments extends Migration
     {
         Schema::table('comments', function (Blueprint $table) {
 
-            $table->foreign("product_id")->references("id")->on("products")->onDelete('cascade');
 
-            $table->foreign("user_id")->references("id")->on("users")->onDelete('cascade');
+
 
 
         });
@@ -31,13 +30,6 @@ class Comments extends Migration
     public function down()
     {
         Schema::table('comments', function (Blueprint $table) {
-
-            // 1. Drop foreign key constraints
-            $table->dropForeign(['product_id']);
-
-
-            // 1. Drop foreign key constraints
-            $table->dropForeign(['user_id']);
 
         });
     }

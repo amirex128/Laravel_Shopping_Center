@@ -20,7 +20,7 @@ $factory->define(App\User::class, function (Faker $faker) {
         'email' => $faker->unique()->safeEmail,
         'avatar' => $faker->imageUrl(512,512),
         'status' => random_int(1,2),
-        'phone' => $faker->phoneNumber,
+        'phone' => intval($faker->phoneNumber),
         'city' => $faker->city,
         'address' => $faker->address,
         'email_verified_at' => now(),

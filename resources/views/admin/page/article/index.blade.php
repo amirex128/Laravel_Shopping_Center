@@ -48,16 +48,19 @@
 
                                     <tr>
                                         <td>{{$article_item->id}}</td>
-                                        <td>{{$article_item->title}}</td>
+                                        <td>{{str_limit($article_item->title,100)}}</td>
                                         <td>{{$article_item->commentCount}}</td>
                                         <td>{{$article_item->created_at}}</td>
                                         <td>{{$article_item->updated_at}}</td>
                                         <td>
-
-                                            <div class="btn-group" role="group" aria-label="">
-                                                <button type="button" class="btn btn-primary"></button>
-                                                <button type="button" class="btn btn-primary"></button>
-                                                <button type="button" class="btn btn-primary"></button>
+                                            <div class="btn-group" role="group">
+                                                <a href="{{route("admin.article.edit",[$article_item->slug])}}" class="btn btn-primary text-white">ویرایش</a>
+                                                <form action="{{route("admin.article.destroy",[$article_item->slug])}}" method="post">
+                                                    @method('DELETE')
+                                                    @csrf
+                                                    <input type="submit" class="btn btn-primary text-white" value="حذف">
+                                                </form>
+                                                <a  class="btn btn-primary text-white">مشاهده</a>
                                             </div>
                                         </td>
                                     </tr>

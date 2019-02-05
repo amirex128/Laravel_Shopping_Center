@@ -4,12 +4,8 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Product::class, function (Faker $faker) {
     return [
-        'brand_id'=>random_int(1,5),
-        'gallery_id'=>random_int(1,5),
-        'property_id'=>random_int(1,5),
-        'warranty_id'=>random_int(1,5),
-        'title'=>$faker->sentence,
-        'description'=>$faker->sentence,
+        'title'=>$faker->realText(300),
+        'description'=>$faker->realText(300),
         'body'=>$faker->realText(2000),
         'price'=>random_int(10000,10000000),
         'offer'=>random_int(10000,500000),

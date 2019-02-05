@@ -57,4 +57,9 @@ class Product extends Model
     {
         return $this->hasMany(OrderItem::class,"product_id","id");
     }
+
+    public function comments()
+    {
+        return $this->morphMany('App\Comment', 'commentable');
+    }
 }

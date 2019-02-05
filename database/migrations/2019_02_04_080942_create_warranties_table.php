@@ -17,6 +17,7 @@ class CreateWarrantiesTable extends Migration
             $table->increments('id');
             $table->integer('product_id')->unsigned();
             $table->string('title');
+            $table->text('slug');
             $table->string('description');
             $table->string('time');
             $table->timestamps();

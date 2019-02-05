@@ -22,3 +22,6 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 
+Route::get('/test/{user}', function (App\User $user) {
+return $user;
+});
