@@ -37,7 +37,6 @@
                                 <tr>
                                     <th>شناسه</th>
                                     <th>عنوان</th>
-                                    <th>تعداد بازدید</th>
                                     <th>تعداد نظرات</th>
                                     <th>تاریخ انتشار</th>
                                     <th>تاریخ بروزرسانی</th>
@@ -46,6 +45,22 @@
                                 </thead>
                                 <tbody>
                                 @forelse($articles as $article_item)
+
+                                    <tr>
+                                        <td>{{$article_item->id}}</td>
+                                        <td>{{$article_item->title}}</td>
+                                        <td>{{$article_item->commentCount}}</td>
+                                        <td>{{$article_item->created_at}}</td>
+                                        <td>{{$article_item->updated_at}}</td>
+                                        <td>
+
+                                            <div class="btn-group" role="group" aria-label="">
+                                                <button type="button" class="btn btn-primary"></button>
+                                                <button type="button" class="btn btn-primary"></button>
+                                                <button type="button" class="btn btn-primary"></button>
+                                            </div>
+                                        </td>
+                                    </tr>
 
 
                                 @empty

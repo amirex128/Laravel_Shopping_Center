@@ -4,13 +4,13 @@
         <div class="py-3">
             <a href="#" class="btn btn-sm success theme-accent btn-block">
                 <i class="fa fa-fw fa-plus"></i>
-                <span class="hidden-folded d-inline">مقاله جدید</span>
+                <span class="hidden-folded d-inline">افزودن محصول</span>
             </a>
         </div>
         <span class="text-xs hidden-folded">مدیریت</span>
     </li>
     <li>
-        <a href="{{route("admin.panel")}}">
+        <a href="{{(route("admin.panel"))}}">
 		                  <span class="nav-icon">
 		                    <i class="fa fa-dashboard"></i>
 		                  </span>
@@ -39,7 +39,7 @@
                 </a>
             </li>
             <li>
-                <a href="{{route("admin.comment.index")}}">
+                <a href="{{("admin.comment.index")}}">
                     <span class="nav-text">نظرات</span>
                 </a>
             </li>
@@ -62,12 +62,12 @@
         </a>
         <ul class="nav-sub">
             <li>
-                <a href="{{route("admin.course.create")}}">
+                <a href="{{("admin.course.create")}}">
                     <span class="nav-text">ایجاد دوره</span>
                 </a>
             </li>
             <li>
-                <a href="{{route("admin.course.index")}}">
+                <a href="{{("admin.course.index")}}">
                     <span class="nav-text">تمام دوره ها</span>
                 </a>
             </li>
@@ -80,12 +80,12 @@
                 </a>
                 <ul class="nav-sub">
                     <li>
-                        <a href="{{route("admin.episode.create")}}">
+                        <a href="{{("admin.episode.create")}}">
                             <span class="nav-text">ایجاد قسمت</span>
                         </a>
                     </li>
                     <li>
-                        <a href="{{route("admin.episode.index")}}">
+                        <a href="{{("admin.episode.index")}}">
                             <span class="nav-text">تمام قسمت ها</span>
                         </a>
                     </li>
@@ -94,7 +94,7 @@
             </li>
 
             <li>
-                <a href="{{route("admin.comment.index")}}">
+                <a href="{{("admin.comment.index")}}">
                     <span class="nav-text">نظرات</span>
                 </a>
             </li>
@@ -117,12 +117,12 @@
         </a>
         <ul class="nav-sub">
             <li>
-                <a href="{{route("admin.user.create")}}">
+                <a href="{{("admin.user.create")}}">
                     <span class="nav-text">کاربر جدید</span>
                 </a>
             </li>
             <li>
-                <a href="{{route("admin.user.index")}}">
+                <a href="{{("admin.user.index")}}">
                     <span class="nav-text">تمام کاربران</span>
                 </a>
             </li>

@@ -12,7 +12,7 @@
 */
 
 
-Route::middleware("auth")->namespace("Admin")->prefix("admin")->name("admin.")->group(function (){
+Route::namespace("Admin")->prefix("admin")->name("admin.")->group(function (){
     Route::get("/","PanelController@index")->name("panel");
     Route::resource("/article","ArticleController");
     Route::resource("/comment","CommentController");

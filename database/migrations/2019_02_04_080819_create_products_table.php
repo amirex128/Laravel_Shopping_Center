@@ -27,20 +27,19 @@ class CreateProductsTable extends Migration
 
             $table->string("title");
             $table->text("body");
-            $table->string("description");
-            $table->string("price");
-            $table->string("offer");
+            $table->string("description")->nullable();
+            $table->integer("price")->default(0);
+            $table->integer("offer")->default(0);
             $table->string("thumbnail");
-            $table->string("video");
+            $table->string("video")->nullable();
             $table->text("status");
-            $table->string("special");
-            $table->string("warranty");
+            $table->integer("special")->default(1);
             $table->string("code");
-            $table->string("stock");
-            $table->string("situation");
-            $table->integer("order_count");
-            $table->integer("view_count");
-            $table->integer("comment_count");
+            $table->integer("stock")->default(0);
+            $table->integer("situation")->default(1);
+            $table->integer("order_count")->default(0);
+            $table->integer("view_count")->default(0);
+            $table->integer("comment_count")->default(0);
             $table->timestamps();
         });
     }
