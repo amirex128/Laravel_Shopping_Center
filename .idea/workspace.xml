@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc650514-44d9-4f53-a303-7bf136666bda" name="Default Changelist" comment="aaa">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/aside/asidenav_main_first.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/aside/asidenav_main_first.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/page/product/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/page/product/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/page/product/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="188" selection-start-line="188" selection-end-line="196" selection-end-column="126" />
+            <state relative-caret-position="637">
+              <caret line="237" selection-start-line="237" selection-end-line="237" />
               <folding>
                 <element signature="e#2112#2723#0#HTML" />
                 <element signature="e#2206#2393#0#HTML" />
@@ -40,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/ProductController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="385">
@@ -101,7 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_04_095735_products.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_03_130451_create_galleries_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_03_130515_create_properties_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_02_05_083829_gallery.php" />
@@ -151,6 +143,7 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/admin/ProductController.php" />
+        <option value="Z:/amir-shirdel/project1/project1/resources/views/panel/add-product.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/page/product/create.blade.php" />
       </list>
     </option>
@@ -434,7 +427,7 @@
       <workItem from="1549434052164" duration="2544000" />
       <workItem from="1549437916113" duration="2620000" />
       <workItem from="1549440639208" duration="1497000" />
-      <workItem from="1549442601481" duration="14957000" />
+      <workItem from="1549442601481" duration="16587000" />
     </task>
     <task id="LOCAL-00001" summary="aaa">
       <created>1549437101859</created>
@@ -447,7 +440,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161443000" />
+    <option name="totallyTimeSpent" value="163073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -535,13 +528,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="aaa" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_04_112540_attributegroups.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="16" column="25" selection-start-line="16" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_04_080942_create_warranties_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -817,20 +803,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/ProductController.php">
+    <entry file="file://Z:/amir-shirdel/project1/project1/resources/views/panel/add-product.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        <state relative-caret-position="427">
+          <caret line="442" column="96" selection-start-line="442" selection-end-line="443" />
           <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
+            <element signature="e#19453#19481#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/page/product/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="188" selection-start-line="188" selection-end-line="196" selection-end-column="126" />
+        <state relative-caret-position="637">
+          <caret line="237" selection-start-line="237" selection-end-line="237" />
           <folding>
             <element signature="e#2112#2723#0#HTML" />
             <element signature="e#2206#2393#0#HTML" />
@@ -838,6 +824,16 @@
             <element signature="e#2864#4263#0#HTML" />
             <element signature="e#7012#7137#0#HTML" />
             <element signature="e#8379#8496#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/admin/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

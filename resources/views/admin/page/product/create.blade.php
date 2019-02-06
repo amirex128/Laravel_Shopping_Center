@@ -186,15 +186,15 @@
                                              aria-labelledby="v-pills-messages-tab">
 
 
-                                            <div id="imagee" class="row ">
+                                            <div id="imagee">
 
-                                                <input  type="file" name="imageGallery[]" class="dropify" data-height="200" />
-
+                                                <input type="file" name="imageGallery[]" class="dropify m-3" data-height="200"/>
 
 
                                             </div>
 
-                                            <a id="add-image" class="mt-4 btn btn-block btn-info text-white ">افزودن تصویر</a>
+                                            <a id="add-image" class="mt-4 btn btn-block btn-info text-white ">افزودن
+                                                تصویر</a>
 
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
@@ -226,18 +226,28 @@
                 messages: {
                     'default': 'تصاویر محصول را اینجا بکشید',
                     'replace': 'برای تغییر عکس فعلی تصویر جدید را اینجا بکشید',
-                    'remove':  'حذف کردن',
-                    'error':   'مشکل در ارسال تصویر.'
+                    'remove': 'حذف کردن',
+                    'error': 'مشکل در ارسال تصویر.'
                 }
             });
-
             $('#add-image').click(function () {
-var item = " <input  type=\"file\" name=\"imageGallery[]\" class=\"dropify\" data-height=\"200\" />"
-$('#imagee').append(item)
 
+                var item = "<input type=\"file\" name=\"imageGallery[]\" class=\"dropify m-3\" data-height=\"200\"/>";
+
+                $('#imagee').append(item)
+
+                $('.dropify').dropify({
+                    messages: {
+                        'default': 'تصاویر محصول را اینجا بکشید',
+                        'replace': 'برای تغییر عکس فعلی تصویر جدید را اینجا بکشید',
+                        'remove': 'حذف کردن',
+                        'error': 'مشکل در ارسال تصویر.'
+                    }
+                });
             });
 
         })
+
 
         ClassicEditor
             .create(document.querySelector('#editor'))
