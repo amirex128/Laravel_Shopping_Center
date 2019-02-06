@@ -62,12 +62,12 @@
         </a>
         <ul class="nav-sub">
             <li>
-                <a href="{{("admin.course.create")}}">
+                <a href="{{route("admin.product.create")}}">
                     <span class="nav-text">ایجاد محصول</span>
                 </a>
             </li>
             <li>
-                <a href="{{("admin.course.index")}}">
+                <a href="{{route("admin.product.index")}}">
                     <span class="nav-text">تمام محصولات</span>
                 </a>
             </li>
@@ -80,13 +80,13 @@
                 </a>
                 <ul class="nav-sub">
                     <li>
-                        <a href="{{("admin.episode.create")}}">
+                        <a href="{{route("admin.attributeGroup.create")}}">
                             <span class="nav-text">ایجاد گروه ویژگی</span>
                         </a>
                     </li>
                     <li>
-                        <a href="{{("admin.episode.index")}}">
-                            <span class="nav-text">تمام قسمت ها</span>
+                        <a href="{{route("admin.attributeGroup.index")}}">
+                            <span class="nav-text">تمام گروه های ویژگی</span>
                         </a>
                     </li>
                 </ul>

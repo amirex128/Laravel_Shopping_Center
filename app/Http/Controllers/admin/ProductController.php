@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Product;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class ProductController extends Main
 {
     /**
      * Display a listing of the resource.
@@ -36,7 +36,8 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+ return $request;
+
     }
 
     /**

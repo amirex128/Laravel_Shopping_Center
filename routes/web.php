@@ -17,6 +17,7 @@ Route::namespace("Admin")->prefix("admin")->name("admin.")->group(function (){
     Route::resource("/article","ArticleController");
     Route::resource("/product","ProductController");
     Route::resource("/user","UserController");
+    Route::resource("/attributeGroup","AttributeGroupController");
 });
 
 
