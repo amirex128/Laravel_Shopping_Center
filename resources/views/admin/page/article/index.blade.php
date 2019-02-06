@@ -55,17 +55,16 @@
                                         <td>
                                             <div class="btn-group" role="group">
                                                 <a href="{{route("admin.article.edit",[$article_item->slug])}}" class="btn btn-primary text-white">ویرایش</a>
-                                                <form action="{{route("admin.article.destroy",[$article_item->slug])}}" method="post">
-                                                    @method('DELETE')
-                                                    @csrf
-                                                    <input type="submit" class="btn btn-primary text-white" value="حذف">
-                                                </form>
+                                                <a onclick="document.getElementById('form-delete').submit()" class="btn btn-primary text-white">حذف</a>
                                                 <a  class="btn btn-primary text-white">مشاهده</a>
                                             </div>
                                         </td>
                                     </tr>
 
-
+                                    <form id="form-delete" action="{{route("admin.article.destroy",[$article_item->slug])}}" method="post">
+                                        @method('DELETE')
+                                        @csrf
+                                    </form>
                                 @empty
 
 

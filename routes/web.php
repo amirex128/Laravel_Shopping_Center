@@ -15,9 +15,18 @@
 Route::namespace("Admin")->prefix("admin")->name("admin.")->group(function (){
     Route::get("/","PanelController@index")->name("panel");
     Route::resource("/article","ArticleController");
-    Route::resource("/comment","CommentController");
+    Route::resource("/product","ProductController");
     Route::resource("/user","UserController");
 });
+
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');

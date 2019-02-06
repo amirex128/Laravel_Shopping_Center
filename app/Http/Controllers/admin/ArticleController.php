@@ -68,6 +68,7 @@ class ArticleController extends Main
      */
     public function destroy(Article $Article)
     {
+
         $Article->delete();
         return redirect()->route("admin.article.index");
     }

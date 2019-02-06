@@ -58,17 +58,17 @@
             <span class="nav-icon">
 		                    <i class="fa fa-align-left"></i>
 		                  </span>
-            <span class="nav-text">دوره های آموزشی</span>
+            <span class="nav-text">محصولات</span>
         </a>
         <ul class="nav-sub">
             <li>
                 <a href="{{("admin.course.create")}}">
-                    <span class="nav-text">ایجاد دوره</span>
+                    <span class="nav-text">ایجاد محصول</span>
                 </a>
             </li>
             <li>
                 <a href="{{("admin.course.index")}}">
-                    <span class="nav-text">تمام دوره ها</span>
+                    <span class="nav-text">تمام محصولات</span>
                 </a>
             </li>
             <li>
@@ -76,12 +76,12 @@
                     		                  <span class="nav-caret">
 		                    <i class="fa fa-caret-down"></i>
 		                  </span>
-                    <span class="nav-text">قسمت ها</span>
+                    <span class="nav-text">ویژگی های محصولات</span>
                 </a>
                 <ul class="nav-sub">
                     <li>
                         <a href="{{("admin.episode.create")}}">
-                            <span class="nav-text">ایجاد قسمت</span>
+                            <span class="nav-text">ایجاد گروه ویژگی</span>
                         </a>
                     </li>
                     <li>
@@ -89,10 +89,8 @@
                             <span class="nav-text">تمام قسمت ها</span>
                         </a>
                     </li>
-
                 </ul>
             </li>
-
             <li>
                 <a href="{{("admin.comment.index")}}">
                     <span class="nav-text">نظرات</span>
