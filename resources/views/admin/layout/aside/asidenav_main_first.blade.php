@@ -76,19 +76,20 @@
                     		                  <span class="nav-caret">
 		                    <i class="fa fa-caret-down"></i>
 		                  </span>
-                    <span class="nav-text">ویژگی های محصولات</span>
+                    <span class="nav-text">جدول ویژگی محصول</span>
                 </a>
                 <ul class="nav-sub">
                     <li>
                         <a href="{{route("admin.attributeGroup.create")}}">
-                            <span class="nav-text">ایجاد گروه ویژگی</span>
+                            <span class="nav-text">ایجاد جدول جدید</span>
                         </a>
                     </li>
                     <li>
                         <a href="{{route("admin.attributeGroup.index")}}">
-                            <span class="nav-text">تمام گروه های ویژگی</span>
+                            <span class="nav-text">مشاهده جداول</span>
                         </a>
                     </li>
+
                 </ul>
             </li>
             <li>
@@ -122,39 +123,6 @@
             <li>
                 <a href="{{("admin.user.index")}}">
                     <span class="nav-text">تمام کاربران</span>
-                </a>
-            </li>
-        </ul>
-    </li>
-    <li>
-        <a>
-		                  <span class="nav-caret">
-		                    <i class="fa fa-caret-down"></i>
-		                  </span>
-            <span class="nav-icon">
-		                    <i class="fa fa-align-left"></i>
-		                  </span>
-            <span class="nav-text">محصولات</span>
-        </a>
-        <ul class="nav-sub">
-            <li>
-                <a href="layout.header.html">
-                    <span class="nav-text">ایجاد مقاله</span>
-                </a>
-            </li>
-            <li>
-                <a href="layout.sidenav.html">
-                    <span class="nav-text">تمام مقالات</span>
-                </a>
-            </li>
-            <li>
-                <a href="layout.aside.html">
-                    <span class="nav-text">نظرات</span>
-                </a>
-            </li>
-            <li>
-                <a href="layout.flex.html">
-                    <span class="nav-text">گالری</span>
                 </a>
             </li>
         </ul>

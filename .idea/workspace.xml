@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc650514-44d9-4f53-a303-7bf136666bda" name="Default Changelist" comment="aaa">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/script_core.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/script_core.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/page/product/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/page/product/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/aside/asidenav_main_first.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/aside/asidenav_main_first.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/page/product/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="674">
-              <caret line="374" column="92" selection-start-line="374" selection-start-column="92" selection-end-line="374" selection-end-column="92" />
+            <state relative-caret-position="-270">
+              <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
               <folding>
                 <element signature="e#4630#8016#0#HTML" />
                 <element signature="e#8057#17347#0#HTML" />
@@ -34,6 +31,62 @@
                 <element signature="e#18288#18862#0#HTML" />
                 <element signature="e#18911#19662#0#HTML" />
                 <element signature="e#19785#24181#0#HTML" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/layout/aside/asidenav_main_first.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="88" column="63" selection-start-line="88" selection-start-column="63" selection-end-line="88" selection-end-column="63" />
+              <folding>
+                <element signature="n#li#0;n#ul#0;n#!!top" />
+                <element signature="n#div#0;n#li#0;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#div#0;n#li#0;n#ul#0;n#!!top" />
+                <element signature="n#li#1;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#1;n#ul#0;n#!!top" />
+                <element signature="n#span#0;n#a#0;n#li#1;n#ul#0;n#!!top" />
+                <element signature="n#li#2;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#2;n#ul#0;n#!!top" />
+                <element signature="n#span#0;n#a#0;n#li#2;n#ul#0;n#!!top" />
+                <element signature="n#span#1;n#a#0;n#li#2;n#ul#0;n#!!top" />
+                <element signature="n#ul#0;n#li#2;n#ul#0;n#!!top" />
+                <element signature="n#li#0;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+                <element signature="n#li#1;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+                <element signature="n#li#2;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#2;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+                <element signature="n#li#3;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#3;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#3;n#ul#0;n#!!top" />
+                <element signature="n#span#0;n#a#0;n#li#3;n#ul#0;n#!!top" />
+                <element signature="n#span#1;n#a#0;n#li#3;n#ul#0;n#!!top" />
+                <element signature="n#li#0;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#0;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+                <element signature="n#li#1;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#1;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#2;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+                <element signature="n#span#0;n#a#0;n#li#2;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+                <element signature="n#li#3;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#3;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+                <element signature="n#li#4;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#4;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+                <element signature="n#li#4;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#4;n#ul#0;n#!!top" />
+                <element signature="n#span#0;n#a#0;n#li#4;n#ul#0;n#!!top" />
+                <element signature="n#span#1;n#a#0;n#li#4;n#ul#0;n#!!top" />
+                <element signature="n#ul#0;n#li#4;n#ul#0;n#!!top" />
+                <element signature="n#li#0;n#ul#0;n#li#4;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#0;n#ul#0;n#li#4;n#ul#0;n#!!top" />
+                <element signature="n#li#1;n#ul#0;n#li#4;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#1;n#ul#0;n#li#4;n#ul#0;n#!!top" />
+                <element signature="n#li#6;n#ul#0;n#!!top" />
+                <element signature="n#a#0;n#li#6;n#ul#0;n#!!top" />
+                <element signature="n#span#0;n#a#0;n#li#6;n#ul#0;n#!!top" />
+                <element signature="n#span#1;n#a#0;n#li#6;n#ul#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -138,7 +191,6 @@
         <option value="$PROJECT_DIR$/resources/views/admin/page/article/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/admin/ArticleController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/page/article/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/layout/aside/asidenav_main_first.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/admin/ProductController.php" />
@@ -149,6 +201,7 @@
         <option value="$PROJECT_DIR$/public/libs/fSelect.css" />
         <option value="$PROJECT_DIR$/resources/views/admin/layout/script_core.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/page/product/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/layout/aside/asidenav_main_first.blade.php" />
       </list>
     </option>
   </component>
@@ -261,7 +314,7 @@
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1937" />
@@ -296,17 +349,6 @@
             <path>
               <item name="p2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="p2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="libs" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="p2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -328,7 +370,16 @@
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="page" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="layout" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="p2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="layout" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aside" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -426,7 +477,7 @@
       <workItem from="1549440639208" duration="1497000" />
       <workItem from="1549442601481" duration="16893000" />
       <workItem from="1549520674021" duration="1016000" />
-      <workItem from="1549523485644" duration="16460000" />
+      <workItem from="1549523485644" duration="17712000" />
     </task>
     <task id="LOCAL-00001" summary="aaa">
       <created>1549437101859</created>
@@ -439,11 +490,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180855000" />
+    <option name="totallyTimeSpent" value="182107000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1536" height="864" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18619792" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -671,13 +721,6 @@
     <entry file="file://$PROJECT_DIR$/public/assets/jquery.steps.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/layout/aside/asidenav_main_first.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="933">
-          <caret line="86" column="23" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpack.mix.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -829,10 +872,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layout/aside/asidenav_main_first.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="88" column="63" selection-start-line="88" selection-start-column="63" selection-end-line="88" selection-end-column="63" />
+          <folding>
+            <element signature="n#li#0;n#ul#0;n#!!top" />
+            <element signature="n#div#0;n#li#0;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#div#0;n#li#0;n#ul#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#1;n#ul#0;n#!!top" />
+            <element signature="n#span#0;n#a#0;n#li#1;n#ul#0;n#!!top" />
+            <element signature="n#li#2;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#2;n#ul#0;n#!!top" />
+            <element signature="n#span#0;n#a#0;n#li#2;n#ul#0;n#!!top" />
+            <element signature="n#span#1;n#a#0;n#li#2;n#ul#0;n#!!top" />
+            <element signature="n#ul#0;n#li#2;n#ul#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#0;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#1;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+            <element signature="n#li#2;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#2;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+            <element signature="n#li#3;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#3;n#ul#0;n#li#2;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#3;n#ul#0;n#!!top" />
+            <element signature="n#span#0;n#a#0;n#li#3;n#ul#0;n#!!top" />
+            <element signature="n#span#1;n#a#0;n#li#3;n#ul#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#0;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#1;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#2;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+            <element signature="n#span#0;n#a#0;n#li#2;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+            <element signature="n#li#3;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#3;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+            <element signature="n#li#4;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#4;n#ul#0;n#li#3;n#ul#0;n#!!top" />
+            <element signature="n#li#4;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#4;n#ul#0;n#!!top" />
+            <element signature="n#span#0;n#a#0;n#li#4;n#ul#0;n#!!top" />
+            <element signature="n#span#1;n#a#0;n#li#4;n#ul#0;n#!!top" />
+            <element signature="n#ul#0;n#li#4;n#ul#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#li#4;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#0;n#ul#0;n#li#4;n#ul#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#li#4;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#1;n#ul#0;n#li#4;n#ul#0;n#!!top" />
+            <element signature="n#li#6;n#ul#0;n#!!top" />
+            <element signature="n#a#0;n#li#6;n#ul#0;n#!!top" />
+            <element signature="n#span#0;n#a#0;n#li#6;n#ul#0;n#!!top" />
+            <element signature="n#span#1;n#a#0;n#li#6;n#ul#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/page/product/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="374" column="92" selection-start-line="374" selection-start-column="92" selection-end-line="374" selection-end-column="92" />
+        <state relative-caret-position="-270">
+          <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
           <folding>
             <element signature="e#4630#8016#0#HTML" />
             <element signature="e#8057#17347#0#HTML" />
