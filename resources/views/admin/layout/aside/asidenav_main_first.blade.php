@@ -16,7 +16,7 @@
 		                  </span>
             <span class="nav-text">داشبورد</span>
         </a>
-    </li>
+    </li> 
     <li>
         <a>
 		                  <span class="nav-caret">
@@ -39,8 +39,14 @@
                 </a>
             </li>
             <li>
-                <a href="{{("admin.comment.index")}}">
-                    <span class="nav-text">نظرات</span>
+                <a href="app.inbox.html">
+		                  <span class="nav-badge">
+		                    <b class="badge badge-sm badge-pill success">6</b>
+		                  </span>
+                    <span class="nav-icon">
+		                    <i class="fa fa-envelope"></i>
+		                  </span>
+                    <span class="nav-text">نظرات جدید</span>
                 </a>
             </li>
             <li>
@@ -93,8 +99,14 @@
                 </ul>
             </li>
             <li>
-                <a href="{{("admin.comment.index")}}">
-                    <span class="nav-text">نظرات</span>
+                <a href="app.inbox.html">
+		                  <span class="nav-badge">
+		                    <b class="badge badge-sm badge-pill success">6</b>
+		                  </span>
+                    <span class="nav-icon">
+		                    <i class="fa fa-envelope"></i>
+		                  </span>
+                    <span class="nav-text">نظرات جدید</span>
                 </a>
             </li>
             <li>
@@ -128,15 +140,27 @@
         </ul>
     </li>
     <li>
-        <a href="app.inbox.html">
-		                  <span class="nav-badge">
-		                    <b class="badge badge-sm badge-pill success">6</b>
+        <a>
+		                  <span class="nav-caret">
+		                    <i class="fa fa-caret-down"></i>
 		                  </span>
             <span class="nav-icon">
-		                    <i class="fa fa-envelope"></i>
+		                    <i class="fa fa-align-left"></i>
 		                  </span>
-            <span class="nav-text">نظرات جدید</span>
+            <span class="nav-text">آپلود سنتر</span>
         </a>
+        <ul class="nav-sub">
+            <li>
+                <a href="{{("admin.user.create")}}">
+                    <span class="nav-text">آپلود فایل جدید</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{("admin.user.index")}}">
+                    <span class="nav-text">تمام فایل ها</span>
+                </a>
+            </li>
+        </ul>
     </li>
     <li class="pb-2 hidden-folded"></li>
 </ul>
