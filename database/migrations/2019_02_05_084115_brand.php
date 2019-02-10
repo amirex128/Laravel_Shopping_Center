@@ -13,10 +13,10 @@ class Brand extends Migration
      */
     public function up()
     {
-        Schema::table('brands', function (Blueprint $table) {
-            $table->foreign("product_id")->references("id")->on("products")->onDelete('cascade');
-
-        });
+//        Schema::table('brands', function (Blueprint $table) {
+//            $table->foreign("product_id")->references("id")->on("products")->onDelete('cascade');
+//
+//        });
     }
 
     /**
@@ -26,8 +26,8 @@ class Brand extends Migration
      */
     public function down()
     {
-        Schema::table('brand', function (Blueprint $table) {
-            //
-        });
+//        Schema::table('brand', function (Blueprint $table) {
+//            //
+//        });
     }
 }

@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     use Sluggable;
-
+    protected $guarded=[];
     /**
      * Return the sluggable configuration array for this model.
      *

@@ -13,13 +13,13 @@ class CreatePropertiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('properties', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('product_id')->unsigned();
-            $table->text('advantages');
-            $table->text('disadvantages');
-            $table->timestamps();
-        });
+//        Schema::create('properties', function (Blueprint $table) {
+//            $table->increments('id');
+//            $table->integer('product_id')->unsigned();
+//            $table->text('advantages');
+//            $table->text('disadvantages');
+//            $table->timestamps();
+//        });
     }
 
     /**
@@ -29,6 +29,6 @@ class CreatePropertiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('properties');
+//        Schema::dropIfExists('properties');
     }
 }

@@ -13,16 +13,16 @@ class CreateBrandsTable extends Migration
      */
     public function up()
     {
-        Schema::create('brands', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('product_id')->unsigned();
-            $table->string('title');
-            $table->text('slug');
-            $table->string('body');
-            $table->string('thumbnail');
-            $table->string('url');
-            $table->timestamps();
-        });
+//        Schema::create('brands', function (Blueprint $table) {
+//            $table->increments('id');
+//            $table->integer('product_id')->unsigned();
+//            $table->string('title');
+//            $table->text('slug');
+//            $table->string('body');
+//            $table->string('thumbnail');
+//            $table->string('url');
+//            $table->timestamps();
+//        });
     }
 
     /**
@@ -32,6 +32,6 @@ class CreateBrandsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('brands');
+//        Schema::dropIfExists('brands');
     }
 }

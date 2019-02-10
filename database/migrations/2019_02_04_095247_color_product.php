@@ -13,12 +13,12 @@ class ColorProduct extends Migration
      */
     public function up()
     {
-        Schema::table('color_product', function (Blueprint $table) {
-
-            $table->foreign("color_id")->references("id")->on("colors")->onDelete('cascade');
-
-            $table->foreign("product_id")->references("id")->on("products")->onDelete('cascade');
-        });
+//        Schema::table('color_product', function (Blueprint $table) {
+//
+//            $table->foreign("color_id")->references("id")->on("colors")->onDelete('cascade');
+//
+//            $table->foreign("product_id")->references("id")->on("products")->onDelete('cascade');
+//        });
     }
 
     /**
@@ -28,14 +28,14 @@ class ColorProduct extends Migration
      */
     public function down()
     {
-        Schema::table('color_product', function (Blueprint $table) {
-            // 1. Drop foreign key constraints
-            $table->dropForeign(['color_id']);
-
-
-            // 1. Drop foreign key constraints
-            $table->dropForeign(['product_id']);
-
-        });
+//        Schema::table('color_product', function (Blueprint $table) {
+//            // 1. Drop foreign key constraints
+//            $table->dropForeign(['color_id']);
+//
+//
+//            // 1. Drop foreign key constraints
+//            $table->dropForeign(['product_id']);
+//
+//        });
     }
 }

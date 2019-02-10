@@ -13,19 +13,19 @@ class CreateColorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('colors', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('title');
-            $table->string('code');
-            $table->timestamps();
-        });
-
-        Schema::create('color_product', function (Blueprint $table) {
-            $table->increments("id");
-            $table->integer("color_id")->unsigned();
-            $table->integer("product_id")->unsigned();
-            $table->timestamps();
-        });
+//        Schema::create('colors', function (Blueprint $table) {
+//            $table->increments('id');
+//            $table->string('title');
+//            $table->string('code');
+//            $table->timestamps();
+//        });
+//
+//        Schema::create('color_product', function (Blueprint $table) {
+//            $table->increments("id");
+//            $table->integer("color_id")->unsigned();
+//            $table->integer("product_id")->unsigned();
+//            $table->timestamps();
+//        });
     }
 
     /**
@@ -35,7 +35,7 @@ class CreateColorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('colors');
-        Schema::dropIfExists('color_product');
+//        Schema::dropIfExists('colors');
+//        Schema::dropIfExists('color_product');
     }
 }

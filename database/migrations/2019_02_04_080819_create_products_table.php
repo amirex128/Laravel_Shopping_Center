@@ -25,6 +25,11 @@ class CreateProductsTable extends Migration
             $table->string("video")->nullable();
             $table->text("status");
             $table->text("slug");
+            $table->text("galleries");
+            $table->text("properties");
+            $table->text("warranties");
+            $table->text("colors");
+            $table->text("brands");
             $table->integer("special")->default(1);
             $table->string("code");
             $table->integer("stock")->default(0);

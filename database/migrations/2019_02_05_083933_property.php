@@ -13,10 +13,10 @@ class Property extends Migration
      */
     public function up()
     {
-        Schema::table('properties', function (Blueprint $table) {
-            $table->foreign("product_id")->references("id")->on("products")->onDelete('cascade');
-
-        });
+//        Schema::table('properties', function (Blueprint $table) {
+//            $table->foreign("product_id")->references("id")->on("products")->onDelete('cascade');
+//
+//        });
     }
 
     /**
@@ -26,8 +26,8 @@ class Property extends Migration
      */
     public function down()
     {
-        Schema::table('property', function (Blueprint $table) {
-            //
-        });
+//        Schema::table('property', function (Blueprint $table) {
+//            //
+//        });
     }
 }

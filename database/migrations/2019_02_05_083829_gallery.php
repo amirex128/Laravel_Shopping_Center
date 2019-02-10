@@ -13,10 +13,10 @@ class Gallery extends Migration
      */
     public function up()
     {
-        Schema::table('galleries', function (Blueprint $table) {
-            $table->foreign("product_id")->references("id")->on("products")->onDelete('cascade');
-
-        });
+//        Schema::table('galleries', function (Blueprint $table) {
+//            $table->foreign("product_id")->references("id")->on("products")->onDelete('cascade');
+//
+//        });
     }
 
     /**
@@ -26,8 +26,8 @@ class Gallery extends Migration
      */
     public function down()
     {
-        Schema::table('gallery', function (Blueprint $table) {
-            //
-        });
+//        Schema::table('gallery', function (Blueprint $table) {
+//            //
+//        });
     }
 }

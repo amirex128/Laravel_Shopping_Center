@@ -13,10 +13,10 @@ class Warranty extends Migration
      */
     public function up()
     {
-        Schema::table('warranties', function (Blueprint $table) {
-            $table->foreign("product_id")->references("id")->on("products")->onDelete('cascade');
-
-        });
+//        Schema::table('warranties', function (Blueprint $table) {
+//            $table->foreign("product_id")->references("id")->on("products")->onDelete('cascade');
+//
+//        });
     }
 
     /**
@@ -26,8 +26,8 @@ class Warranty extends Migration
      */
     public function down()
     {
-        Schema::table('warranty', function (Blueprint $table) {
-            //
-        });
+//        Schema::table('warranty', function (Blueprint $table) {
+//            //
+//        });
     }
 }

@@ -13,15 +13,15 @@ class CreateWarrantiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('warranties', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('product_id')->unsigned();
-            $table->string('title');
-            $table->text('slug');
-            $table->string('description');
-            $table->string('time');
-            $table->timestamps();
-        });
+//        Schema::create('warranties', function (Blueprint $table) {
+//            $table->increments('id');
+//            $table->integer('product_id')->unsigned();
+//            $table->string('title');
+//            $table->text('slug');
+//            $table->string('description');
+//            $table->string('time');
+//            $table->timestamps();
+//        });
     }
 
     /**
@@ -31,6 +31,6 @@ class CreateWarrantiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('warranties');
+//        Schema::dropIfExists('warranties');
     }
 }

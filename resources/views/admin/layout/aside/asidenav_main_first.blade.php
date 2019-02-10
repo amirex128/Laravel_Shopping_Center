@@ -91,9 +91,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{route("admin.attributeGroup.index")}}">
-                            <span class="nav-text">مشاهده جداول</span>
-                        </a>
+                        {{--<a href="{{route("admin.attributeGroup.index")}}">--}}
+                            {{--<span class="nav-text">مشاهده جداول</span>--}}
+                        {{--</a>--}}
                     </li>
 
                 </ul>

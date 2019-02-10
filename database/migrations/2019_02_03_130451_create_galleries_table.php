@@ -13,12 +13,12 @@ class CreateGalleriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('galleries', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('product_id')->unsigned();
-            $table->text('urls');
-            $table->timestamps();
-        });
+//        Schema::create('galleries', function (Blueprint $table) {
+//            $table->increments('id');
+//            $table->integer('product_id')->unsigned();
+//            $table->text('urls');
+//            $table->timestamps();
+//        });
     }
 
     /**
@@ -28,6 +28,6 @@ class CreateGalleriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('galleries');
+//        Schema::dropIfExists('galleries');
     }
 }
