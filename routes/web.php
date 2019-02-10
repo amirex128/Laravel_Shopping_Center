@@ -16,6 +16,7 @@ Route::namespace("Admin")->prefix("admin")->name("admin.")->group(function (){
     Route::get("/","PanelController@index")->name("panel");
     Route::resource("/article","ArticleController");
     Route::resource("/product","ProductController");
+    Route::resource("/attributeGroup","attributeGroupController");
     Route::resource("/user","UserController");
     Route::resource("/attributeGroup","AttributeGroupController");
 });

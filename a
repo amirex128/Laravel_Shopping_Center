@@ -1,0 +1,87 @@
+[33mcommit 6cd70e3d84eb9455913c9b2352fdb5dd779b5566[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Amir <amirex128@gmail.com>
+Date:   Sat Feb 9 16:34:38 2019 +0330
+
+    new change
+
+[33mcommit 27ace8301e3dfa618f772d37c2a64588f8186797[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Amir <amirex128@gmail.com>
+Date:   Thu Feb 7 17:32:24 2019 +0330
+
+    تکمیل 90 درصد بخش انتشار محصول
+    
+    در این بخش تمامی امکانات بخش انتشار محصول به صورت پیشرفته انجام شده و تنها بخش ویژگی های محصول باقی مانده است
+
+[33mcommit 375accd610dfd2cad803bfae4fb6f0dc65618865[m
+Author: Amir <amirex128@gmail.com>
+Date:   Wed Feb 6 18:34:46 2019 +0330
+
+    اصلاح تصاویر محصولات
+
+[33mcommit ec5193ec50a4633eeb9c2472d74e0e5709b53ced[m
+Author: Amir <amirex128@gmail.com>
+Date:   Wed Feb 6 18:15:28 2019 +0330
+
+    افزودن بخش محصولات
+
+[33mcommit 4ee89953fe46b1b0a8b81a471a19d2a7c4616520[m
+Author: Amir <amirex128@gmail.com>
+Date:   Wed Feb 6 12:06:23 2019 +0330
+
+    one
+
+[33mcommit 899f2f1c8913a6f691ef0a243cdc84c692acb2d7[m
+Author: Amir <amirex128@gmail.com>
+Date:   Wed Feb 6 10:41:41 2019 +0330
+
+    aaa
+
+[33mcommit ee4970c46bb8e8bc98f2240b1a55de0f1ba10e62[m
+Author: Amir <amirex128@gmail.com>
+Date:   Tue Feb 5 17:42:59 2019 +0330
+
+    طراحی کامل بخش مقالات و تکمیل روابط
+
+[33mcommit db1fa4b026acaa1f9c25e7f4eb7615023cbb0017[m
+Author: Amir <amirex128@gmail.com>
+Date:   Tue Feb 5 13:49:21 2019 +0330
+
+    پیاده سازی بیش از 90 درصد روابط بین جداول
+
+[33mcommit 90e542206a2a2d68fdb41c4f3ccf229647bdd87a[m
+Author: Amir <amirex128@gmail.com>
+Date:   Tue Feb 5 11:17:36 2019 +0330
+
+    ساخت فکتوری ها
+
+[33mcommit 8c79ad0360cc7deb3348f53dff59750a8d0054a4[m
+Author: Amir <amirex128@gmail.com>
+Date:   Mon Feb 4 15:23:26 2019 +0330
+
+    اصلاح کامل مایگریشن های دیتابیس
+
+[33mcommit 04950b5aa937053f280505ba99076dce6251ab21[m
+Author: Amir <amirex128@gmail.com>
+Date:   Mon Feb 4 13:07:46 2019 +0330
+
+    اجرا شدن مایگریشن ها
+    
+    اجرا شدن مایگریشن ها اجرا میشن و درست شدن و روابط هم کار میکنه فقط روابط داخل دیتابیس کار نمیکنن و این به این معنی است که سافت دیلیت کار نمیکنه
+
+[33mcommit b83373852fa24042dab1f232b8b3fd056af9a692[m
+Author: Amir <amirex128@gmail.com>
+Date:   Mon Feb 4 12:19:13 2019 +0330
+
+    اصلاح مایگریشن های دیتابیس
+
+[33mcommit b4f3a704caabb86e5d7c2cf9b3e248cda8bd3987[m
+Author: Amir <amirex128@gmail.com>
+Date:   Mon Feb 4 10:51:32 2019 +0330
+
+    فایل های بیس لاراول
+
+[33mcommit 0017bab23246d636c34b8bb6eea496764254e5cd[m
+Author: Amir <amirex128@gmail.com>
+Date:   Mon Feb 4 10:23:35 2019 +0330
+
+    Initial commit
