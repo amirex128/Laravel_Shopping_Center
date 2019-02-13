@@ -176,5 +176,6 @@ return [
         'body'              => ' فیلد متن',
         'imageUrl'              => 'تصویر شاخص',
         'attributeGroup'              => 'نام دسته بندی ویژگی',
+        'attribute'              => 'عنوان',
     ],
 ];

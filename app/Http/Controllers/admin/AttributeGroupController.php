@@ -10,11 +10,6 @@ use Illuminate\Http\Request;
 class AttributeGroupController extends Controller
 {
 
-    public function index()
-    {
-        return view('admin.page.attribute.attributeGroupCreate');
-    }
-
 
     public function create()
     {
@@ -41,5 +36,10 @@ class AttributeGroupController extends Controller
         return back()->with('success','دسته بندی ویژگی شما با موفقیت اضافه شد');
     }
 
+    public function destroy(AttributeGroup $attributeGroup)
+    {
+        $attributeGroup->delete();
+        return back()->with('destroy','دسته بندی ویژگی مورد نظر با موفقیت حذف گردید');
+    }
 
 }

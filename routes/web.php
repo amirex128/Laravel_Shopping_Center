@@ -23,7 +23,19 @@ Route::namespace("Admin")->prefix("admin")->name("admin.")->group(function (){
     Route::prefix('attributeGroup')->name('attributeGroup.')->group(function () {
         Route::get('create', "attributeGroupController@create")->name('create');
         Route::post('/', "attributeGroupController@store")->name('store');
+        Route::delete('{attributeGroup}','attributeGroupController@destroy')->name('destroy');
 
+    });
+    /*Attribute*/
+    Route::prefix('attribute')->name('attribute.')->group(function (){
+        Route::get('create/{attributeGroup}', 'AttributeController@create')->name('create');
+        Route::post('/{attributeGroup}', 'AttributeController@store')->name('store');
+        Route::delete('{attribute}', 'AttributeController@destroy')->name('destroy');
+    });
+
+    /*AttributeItem*/
+    Route::prefix('attributeItem')->name('attributeItem.')->group(function (){
+       Route::get('create','attributeItem@create')->name('create');
     });
 });
 
