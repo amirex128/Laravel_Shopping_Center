@@ -34,8 +34,9 @@ class AttributeItemController extends Controller
     {
         
     }
-    public function destroy()
+    public function destroy(AttributeItem $attributeItem)
     {
-        
+        $attributeItem->delete();
+        return back()->with('destroy','سطر مورد نظر شما با موفقیت حذف گردید');
     }
 }
