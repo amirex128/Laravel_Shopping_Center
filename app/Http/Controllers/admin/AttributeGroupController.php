@@ -34,9 +34,11 @@ class AttributeGroupController extends Controller
         ]);
 
        $category= Category::find($request->categories);
-       $
+        $category->attributeGroup()->create([
+            "title"=>$request->input('attributeGroup')
+        ]);
 
-        return $request->all();
+        return back()->with('success','دسته بندی ویژگی شما با موفقیت اضافه شد');
     }
 
 

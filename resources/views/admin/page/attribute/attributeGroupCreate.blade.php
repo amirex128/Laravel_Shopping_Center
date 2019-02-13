@@ -22,6 +22,11 @@
                     </div>
                 </div>
             @endif
+            @if (session('success'))
+                <div class="alert alert-success mt-5">
+                    {{session('success')}}
+                </div>
+            @endif
             <div class="row mt-5">
                 <div class="col-sm-12">
                     <div class="box">
@@ -33,18 +38,6 @@
                                         <a class="nav-link">
                                             <i class="fa fa-fw fa-refresh"></i>
                                         </a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link" data-toggle="dropdown">
-                                            <i class="fa fa-fw fa-ellipsis-v"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item">Separated link</a>
-                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -101,18 +94,7 @@
                                             <i class="fa fa-fw fa-refresh"></i>
                                         </a>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link" data-toggle="dropdown">
-                                            <i class="fa fa-fw fa-ellipsis-v"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item">Separated link</a>
-                                        </div>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -131,6 +113,13 @@
 
                                     <tbody>
                                         @forelse($attributeGroups as $attributeGroup)
+                                            <tr>
+                                                <td>{{$attributeGroup->title}}</td>
+                                                <td>{{$attributeGroup->category->title}}</td>
+                                                <td>
+                                                    
+                                                </td>
+                                            </tr>
 
 
                                             @empty
