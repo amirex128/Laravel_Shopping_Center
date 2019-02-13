@@ -35,7 +35,7 @@ Route::namespace("Admin")->prefix("admin")->name("admin.")->group(function (){
 
     /*AttributeItem*/
     Route::prefix('attributeItem')->name('attributeItem.')->group(function (){
-       Route::get('create','attributeItem@create')->name('create');
+       Route::get('create/{attribute}','attributeItemController@create')->name('create');
     });
 });
 

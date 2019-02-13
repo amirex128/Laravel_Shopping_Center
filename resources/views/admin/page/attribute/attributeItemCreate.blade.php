@@ -22,7 +22,7 @@
         <div class="col-sm">
             @component('component.box')
                 @slot('title')
-                    ایجاد عناوین دسته بندی ویژگی {{$attributeGroup->title}}
+
                 @endslot
                 <form class="row" method="post">
                     @csrf
@@ -46,7 +46,7 @@
 
             @component('component.box')
                 @slot('title')
-                    عنوان های ویژگی {{$attributeGroup->title}}
+
                 @endslot
                 <table class="table table-bordered ">
 
