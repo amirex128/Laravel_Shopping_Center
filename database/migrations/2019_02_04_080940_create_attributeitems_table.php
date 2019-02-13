@@ -17,6 +17,7 @@ class CreateAttributeitemsTable extends Migration
             $table->increments('id');
             $table->string("title");
             $table->string("label");
+            $table->text("value");
             $table->integer("attribute_id")->unsigned();
             $table->timestamps();
         });

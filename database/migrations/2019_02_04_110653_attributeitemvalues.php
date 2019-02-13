@@ -13,9 +13,9 @@ class Attributeitemvalues extends Migration
      */
     public function up()
     {
-        Schema::table('attributevalues', function (Blueprint $table) {
-            $table->foreign("attributeitem_id")->references("id")->on("attributeitems")->onDelete('cascade');
-        });
+//        Schema::table('attributevalues', function (Blueprint $table) {
+//            $table->foreign("attributeitem_id")->references("id")->on("attributeitems")->onDelete('cascade');
+//        });
     }
 
     /**
@@ -25,8 +25,8 @@ class Attributeitemvalues extends Migration
      */
     public function down()
     {
-        Schema::table('attributevalues', function (Blueprint $table) {
-            //
-        });
+//        Schema::table('attributevalues', function (Blueprint $table) {
+//            //
+//        });
     }
 }

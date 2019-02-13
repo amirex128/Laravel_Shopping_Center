@@ -36,6 +36,11 @@ Route::namespace("Admin")->prefix("admin")->name("admin.")->group(function (){
     /*AttributeItem*/
     Route::prefix('attributeItem')->name('attributeItem.')->group(function (){
        Route::get('create/{attribute}','attributeItemController@create')->name('create');
+       Route::post('store/{attribute}','attributeItemController@store')->name('store');
+        Route::get('{attributeItem}/edit','attributeItemController@edit')->name('edit');
+        Route::patch('update','attributeItemController@update')->name('update');
+        Route::patch('destroy/{attributeItem}','attributeItemController@destroy')->name('destroy');
+
     });
 });
 

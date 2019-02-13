@@ -1,6 +1,7 @@
 @extends('admin.master')
 
 @section('main')
+    <link rel="stylesheet" href="{{asset('libs/bootstrap-tagsinput.css')}}">
     <div class="row">
         <div class="col-sm">
             @component('component.errors')
@@ -22,20 +23,26 @@
         <div class="col-sm">
             @component('component.box')
                 @slot('title')
+                    ثبت سطر های جدول ویژگی {{$attribute->title}}
 
                 @endslot
-                <form class="row" method="post">
+                <form id="form-send" action="{{route('admin.attributeItem.store',["attribute"=>$attribute->id])}}" class="row" method="post">
                     @csrf
                     <div class="col form-group">
-                        <label class="text-bold" for="attribute">انتخاب عنوان</label>
-                        <input class="form-control w-100" type="text" placeholder="عنوان ویژگی خود را انتخاب نمایید..." name="attribute" id="attribute">
+                        <label class="text-bold" for="attribute">نام ویژگی </label>
+                        <input class="form-control w-100" type="text" placeholder="برای مثال : نوع پردازنده..." name="attribute" id="attribute">
                     </div>
                     <div class="col form-group">
-                        <label class="text-bold" for="attribute">توضیح مختصر</label>
-                        <input class="form-control w-100" type="text" placeholder="توضیحی مختصر وارد نمایید..." name="description" id="attribute">
+                        <label class="text-bold" for="attribute"> لیبل انتهایی ویژگی  </label>
+                        <input class="form-control w-100" type="text" placeholder="برای مثال میلی متر..." name="description" id="attribute">
                     </div>
                     <div class="w-100"></div>
-                    <input type="submit" value="ثبت عنوان ویژگی" class="btn btn-primary btn-block mx-3">
+                    <div class="col form-group">
+                        <label class="text-bold" for="value-default"> مقادیر پیش فرض برای ویژگی  </label>
+                        <input placeholder="با زدن دکمه Enter میتوانید چند مقدار انتخاب کنید" id="value-default"type="text" name="value" data-role="tagsinput">
+                    </div>
+                    <div class="w-100"></div>
+                    <div onclick="document.getElementById('form-send').submit()"  class="btn btn-primary btn-block mx-3"> ثبت عنوان ویژگی</div>
 
 
                 </form>
@@ -46,40 +53,58 @@
 
             @component('component.box')
                 @slot('title')
-
+            سطر های جدول ویژگی  {{$attribute->title}}
                 @endslot
                 <table class="table table-bordered ">
 
                     <thead class="thead-light">
                     <tr>
-                        <td class="text-bold"> عنوان ویژگی</td>
+                        <td class="text-bold"> عنوان سطر</td>
+                        <td class="text-bold"> لیبل سطر</td>
+                        <td class="text-bold">مقادیر</td>
                         <td class="text-bold">عملیات</td>
                     </tr>
                     </thead>
 
                     <tbody>
-                    {{--@forelse($attributes as $attribute)--}}
-                        {{--<tr>--}}
-                            {{--<td>{{$attribute->title}}</td>--}}
-                            {{--<td class="row justify-content-center">--}}
-                                {{--<div class="btn-group btn-group-sm " role="group" aria-label="Basic example">--}}
-                                    {{--<a href="{{route('admin.attributeItem.create',['attribute'=>$attribute->id])}}" class="btn btn-primary text-white">افزودن ویژگی های محصول</a>--}}
-                                    {{--<a class="btn btn-primary text-white">ویرایش نام</a>--}}
-                                    {{--<a onclick="document.getElementById('attribute-delete').submit()" class="btn btn-primary text-white">حذف عنوان</a>--}}
-                                {{--</div>--}}
-                            {{--</td>--}}
-                        {{--</tr>--}}
-                        {{--<form method="post" id="attribute-delete" action="{{route('admin.attribute.destroy',['id'=>$attribute->id])}}">--}}
-                            {{--@csrf--}}
-                            {{--@method('delete')--}}
-                        {{--</form>--}}
+                    @forelse($attributeItems as $attributeItem)
+                        <tr >
+                            <td >{{$attributeItem->title}}</td>
+                            <td>{{$attributeItem->label}}</td>
+                            <td>
+                                <ul>
+                                    @forelse ($attributeItem->value as $value)
+                                        <li>
+                                            {{$value}}
+                                            @if (($loop->index == 2))
+                                                <br>
+                                                ...
+                                                @break
+                                            @endif
+                                        </li>
+                                    @empty
+                                    مقدار پیش فرضی موجود نیست
+                                    @endforelse
+                                </ul>
+                            </td>
+                            <td class="row justify-content-center">
+                                <div class="btn-group btn-group-sm " role="group" aria-label="Basic example">
+                                    <a href="{{route('admin.attributeItem.edit',['attributeItem'=>$attributeItem->id])}}" class="btn btn-primary text-white">ویرایش</a>
+                                    <a onclick="document.getElementById('attributeItem-delete').submit()" class="btn btn-primary text-white">حذف</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <form method="post" id="attributeItem-delete" action="{{route('admin.attributeItem.destroy',['id'=>$attribute->id])}}">
+                            @csrf
+                            @method('delete')
+                        </form>
 
 
-                    {{--@empty--}}
-                        {{--<tr>--}}
-                            {{--<td class="text-bold text-center bg-info text-white" colspan="3">هیچ عنوانی موجود نیست</td>--}}
-                        {{--</tr>--}}
-                    {{--@endforelse--}}
+                    @empty
+                        <tr>
+                            <td class="text-bold text-center bg-info text-white" colspan="4">هیچ عنوانی موجود نیست</td>
+                        </tr>
+                    @endforelse
                     </tbody>
 
 
@@ -88,3 +113,8 @@
         </div>
     </div>
 @endsection
+
+@section('script')
+    <script src="{{asset('libs/bootstrap-tagsinput.js')}}"></script>
+
+@stop

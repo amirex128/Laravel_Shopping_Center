@@ -13,12 +13,12 @@ class CreateAttributevaluesTable extends Migration
      */
     public function up()
     {
-        Schema::create('attributevalues', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string("title");
-            $table->integer("attributeitem_id")->unsigned();
-            $table->timestamps();
-        });
+//        Schema::create('attributevalues', function (Blueprint $table) {
+//            $table->increments('id');
+//            $table->string("title");
+//            $table->integer("attributeitem_id")->unsigned();
+//            $table->timestamps();
+//        });
     }
 
     /**
@@ -28,6 +28,6 @@ class CreateAttributevaluesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('attributevalues');
+//        Schema::dropIfExists('attributevalues');
     }
 }
