@@ -8,12 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     use Sluggable;
-    protected $guarded=[];
-    /**
-     * Return the sluggable configuration array for this model.
-     *
-     * @return array
-     */
+    protected $fillable=['title','parent','thumbnail'];
+
     public function sluggable()
     {
         return [

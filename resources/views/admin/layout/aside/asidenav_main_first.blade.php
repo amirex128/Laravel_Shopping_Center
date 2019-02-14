@@ -38,22 +38,12 @@
                     <span class="nav-text">تمام مقالات</span>
                 </a>
             </li>
-            <li>
-                <a href="app.inbox.html">
-		                  <span class="nav-badge">
-		                    <b class="badge badge-sm badge-pill success">6</b>
-		                  </span>
-                    <span class="nav-icon">
-		                    <i class="fa fa-envelope"></i>
-		                  </span>
-                    <span class="nav-text">نظرات جدید</span>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <span class="nav-text">گالری</span>
-                </a>
-            </li>
+	        <li>
+		        <a href="{{route("admin.article.index")}}">
+			        <span class="nav-text">تمام نظرات</span>
+		        </a>
+	        </li>
+	        
         </ul>
     </li>
     <li>
@@ -78,42 +68,17 @@
                 </a>
             </li>
             <li>
-                <a>
-                    		                  <span class="nav-caret">
-		                    <i class="fa fa-caret-down"></i>
-		                  </span>
-                    <span class="nav-text">جدول ویژگی محصول</span>
-                </a>
-                <ul class="nav-sub">
-                    <li>
-                        <a href="{{route("admin.attributeGroup.create")}}">
-                            <span class="nav-text">ایجاد جدول جدید</span>
-                        </a>
-                    </li>
-                    <li>
-                        {{--<a href="{{route("admin.attributeGroup.index")}}">--}}
-                            {{--<span class="nav-text">مشاهده جداول</span>--}}
-                        {{--</a>--}}
-                    </li>
+	            <a href="{{route("admin.attributeGroup.create")}}">
+		            <span class="nav-text">ایجاد جدول ویژگی</span>
+	            </a>
+            </li>
+	        
+	        <li>
+		        <a href="{{route("admin.category.index")}}">
+			        <span class="nav-text">دسته بندی ها</span>
+		        </a>
+	        </li>
 
-                </ul>
-            </li>
-            <li>
-                <a href="app.inbox.html">
-		                  <span class="nav-badge">
-		                    <b class="badge badge-sm badge-pill success">6</b>
-		                  </span>
-                    <span class="nav-icon">
-		                    <i class="fa fa-envelope"></i>
-		                  </span>
-                    <span class="nav-text">نظرات جدید</span>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <span class="nav-text">ویدیو ها</span>
-                </a>
-            </li>
         </ul>
     </li>
     <li>

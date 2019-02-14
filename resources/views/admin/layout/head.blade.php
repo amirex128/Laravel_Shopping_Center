@@ -22,7 +22,7 @@
     <!-- build:css /assets/css/app.min.css -->
     <link rel="stylesheet" href="{{asset("libs/bootstrap/dist/css/bootstrap.min.css")}}" type="text/css" />
     <link rel="stylesheet" href="{{asset("assets/css/app.css")}}" type="text/css" />
-    <link rel="stylesheet" href="{{asset("assets/css/style.css")}}" type="text/css" />
+    <link rel="stylesheet" href="{{asset("style-combo.css")}}" type="text/css" />
     <!-- endbuild -->
     <link href="{{asset("assets/css/app.rtl.css")}}" rel="stylesheet"/>
     <link rel="stylesheet" href="{{asset("WebFonts/css/style_font.css")}}">

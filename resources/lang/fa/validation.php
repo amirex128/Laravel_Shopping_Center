@@ -177,5 +177,7 @@ return [
         'imageUrl'              => 'تصویر شاخص',
         'attributeGroup'              => 'نام دسته بندی ویژگی',
         'attribute'              => 'عنوان',
+        'sub-categories'              => ' زیرگروه دسته بندی ',
+        'name-category'              => ' دسته بندی ',
     ],
 ];

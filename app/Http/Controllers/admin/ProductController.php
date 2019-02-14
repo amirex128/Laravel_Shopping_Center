@@ -14,7 +14,7 @@ class ProductController extends Main
      */
     public function index()
     {
-        return view('admin.page.product.index');
+        return view('admin.page.product.index',['products'=>Product::latest()->paginate(15)]);
     }
 
     /**
@@ -24,6 +24,7 @@ class ProductController extends Main
      */
     public function create()
     {
+    	
         return view('admin.page.product.create');
 
     }

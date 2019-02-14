@@ -16,24 +16,28 @@ Route::namespace("Admin")->prefix("admin")->name("admin.")->group(function (){
     Route::get("/","PanelController@index")->name("panel");
     Route::resource("/article","ArticleController");
     Route::resource("/product","ProductController");
-    Route::resource("/user","UserController");
-
-
-    /*AttributeGroup*/
-    Route::prefix('attributeGroup')->name('attributeGroup.')->group(function () {
+    
+     /*User*/
+    Route::resource("/user","UserController")->only(['index','create','store']);
+    
+	/*Category*/
+	Route::resource('/category','CategoryController');
+    
+     /*AttributeGroup*/
+	   Route::prefix('attributeGroup')->name('attributeGroup.')->group(function () {
         Route::get('create', "attributeGroupController@create")->name('create');
         Route::post('/', "attributeGroupController@store")->name('store');
         Route::delete('{attributeGroup}','attributeGroupController@destroy')->name('destroy');
 
     });
-    /*Attribute*/
+     /*Attribute*/
     Route::prefix('attribute')->name('attribute.')->group(function (){
         Route::get('create/{attributeGroup}', 'AttributeController@create')->name('create');
         Route::post('/{attributeGroup}', 'AttributeController@store')->name('store');
         Route::delete('{attribute}', 'AttributeController@destroy')->name('destroy');
     });
 
-    /*AttributeItem*/
+     /*AttributeItem*/
     Route::prefix('attributeItem')->name('attributeItem.')->group(function (){
        Route::get('create/{attribute}','attributeItemController@create')->name('create');
        Route::post('store/{attribute}','attributeItemController@store')->name('store');
