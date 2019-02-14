@@ -34,7 +34,7 @@
 				<select name="sub-categories" class="custom-select">
 					<option selected value="0">دسته مادر</option>
 					@foreach ($categories as $category)
-						<option value="1">{{$category->title}}</option>
+						<option value="{{$category->id}}">{{$category->title}}</option>
 					@endforeach
 				</select>
 			</div>
@@ -69,7 +69,11 @@
 					<td>{{$cate->id}}</td>
 					<td>{{$cate->title}}</td>
 					<td>
-						{{$categories->where('parent',$cate->parent)->first()->title}}
+						@if ($cate->parent == 0)
+						    دسته بندی مادر
+						@else
+						{{$categories->where('id',$cate->parent)->first()->title}}
+						@endif
 					</td>
 					<td>{{$cate->created_at}}</td>
 					<td>{{$cate->updated_at}}</td>
