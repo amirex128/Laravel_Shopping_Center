@@ -340,19 +340,7 @@
                                                     <div class="w-100"></div>
 
                                                     <div class="col" id="added-advantage">
-                                                        {{--<div class="row w-100">--}}
-                                                        {{--<div class="w-100"></div>--}}
-                                                        {{--<div class="col-12 col-md-6">--}}
-                                                        {{--<div class="form-group">--}}
-                                                        {{--<input class="form-control"  placeholder="مزیت های محصول شما..." type="text" name="advantages[advantage][]">--}}
-                                                        {{--</div>--}}
-                                                        {{--</div>--}}
-                                                        {{--<div class="col-12 col-md-6">--}}
-                                                        {{--<div class="form-group">--}}
-                                                        {{--<input class="form-control" placeholder="معایب محصول شما..." type="text" name="advantages[disadvantage][]">--}}
-                                                        {{--</div>--}}
-                                                        {{--</div>--}}
-                                                        {{--</div>--}}
+                                                
 
 
                                                     </div>
